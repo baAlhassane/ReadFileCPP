@@ -1,0 +1,15 @@
+
+    std::string linefile;
+    std::ifstream infile(filename, std::ios::binary);
+    if (!infile.is_open()) {
+        std::cout << "failed to open " << filename << '\n';
+    } else {
+
+        std::cout << "success to open " << filename << '\n';
+        while (getline(infile, linefile)) {
+            lines.push_back(linefile);
+
+
+
+        }
+    }

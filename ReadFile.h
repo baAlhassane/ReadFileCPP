@@ -8,6 +8,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <map>
+
 
 
 class ReadFile {
@@ -15,6 +17,7 @@ class ReadFile {
 private:
     std::vector<char> line; // one line of our file
     std::vector<std::string> lines; // All lines of our file
+    std::map<char,int> map_textures;
 
 public:
     ReadFile(const char* filename="labyrinthe.txt");

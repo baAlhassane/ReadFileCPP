@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(ReadFileCPP
-        ReadFile.cpp
         ReadFile.h
+        ReadFile.cpp
+        MatriceOfCaracters.cpp
+        MatriceOfCaracters.h
         main.cpp)
