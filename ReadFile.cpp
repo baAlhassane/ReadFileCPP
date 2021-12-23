@@ -14,18 +14,15 @@
 #include <sstream>
 
 
-ReadFile::ReadFile(const char *filename) {
-
-
-
+ReadFile::ReadFile(const std::string & filename) {
 
     /// On ouvre le fichier
     std::ifstream f2;
     f2.open("labyrinthe.txt",std::ios_base::in);
     //f2.open(filename,std::ios_base::in);
     /// on cree le vecteur qui contient les lignes
-    std::vector<std::string> lines;
-    std::string line;
+    //std::vector<std::string> lines;
+   // std::string line;
 
     if(f2.is_open()){
         while (f2.good()){
@@ -58,21 +55,55 @@ ReadFile::ReadFile(const char *filename) {
             }
         }
         f2.close();       /// fermeture du fichier
+
     }
 
-
-   /*or (int i = 0; i <lines.size();i++){
+ /*
+    for (int i = 0; i <lines.size();i++){
    std::cout<<lines[i]<<std::endl;
+ }
+  */
+
+
+ nbLines=lines.size();
+
+
+    std::size_t maxColumns=0;
+    for (int i = 0; i < lines.size(); ++i) {
+        // std::cout<<lines.size()<<std::endl;
+        // std::cout<<lines[i]<<std::endl;
+        if(maxColumns<lines[i].length()){
+            maxColumns=lines[i].length();
+        }
+
+        //if(lines[i][0]=="+" || lines[i][0]=="-"|| lines[i][0]=="|")
+
     }
-    */
+
+    nbColumns=maxColumns;
 
 }
-
 
 ReadFile::~ReadFile() {}
 
 
-std::vector<std::string> ReadFile::getLines() {
+
+
+std::vector<std::string> ReadFile::getLines() const{
 
     return lines;
 }
+
+
+
+std::size_t ReadFile::getNbLines() const {
+    return nbLines;
+}
+
+
+std::size_t ReadFile::getNbColumns() const   {
+    return nbColumns;
+}
+
+
+

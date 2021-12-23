@@ -8,6 +8,6 @@ include_directories(.)
 add_executable(ReadFileCPP
         ReadFile.h
         ReadFile.cpp
-        MatriceOfCaracters.cpp
         MatriceOfCaracters.h
+        MatriceOfCaracters.cpp
         main.cpp)

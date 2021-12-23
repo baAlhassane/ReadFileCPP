@@ -11,11 +11,10 @@
 class MatriceOfCaracters {
 private:
     std::vector<std::vector<char>> matriceofcaracters;//stock only the caracters that compose the labyrinthe;
-
 public:
-    MatriceOfCaracters(const std::vector<std::string> & lines);
+    MatriceOfCaracters( const ReadFile &);
     ~MatriceOfCaracters();
-    std::vector<std::vector<char>> getMatriceofcaracters();
+    std::vector<std::vector<char>> getMatriceofcaracters() const;
 
 
 };

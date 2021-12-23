@@ -6,25 +6,28 @@
 #include <iostream>
 #include "ReadFile.h"
 #include <vector>
+#include <string>
+#include "MatriceOfCaracters.h"
 int main(){
     std::cout<<"hello"<<std::endl;
-ReadFile rfile("labyrinthe.txt");
+ReadFile file("labyrinthe.txt");
 
-std::vector<std::string>lines= rfile.getLines();
-   int maxColumns=0;
-    for (int i = 0; i < lines.size(); ++i) {
-        //std::cout<<lines[i]<<std::endl;
-        if(maxColumns<lines[i].length()){
-            maxColumns=lines[i].length();
-        }
+std::vector<std::string>lines= file.getLines();
 
-        //if(lines[i][0]=="+" || lines[i][0]=="-"|| lines[i][0]=="|")
+std::cout<<file.getNbLines()<< " X "<< file.getNbColumns()<<std::endl;
 
-   }
 
-    int nbLines=lines.size();
+MatriceOfCaracters matrice(file);
 
-    //std::cout<<nbLines<< " X "<< maxColumns<<std::endl;
+std::vector<std::vector<char>> vect=matrice.getMatriceofcaracters();
+
+
+/*
+    for(auto cars:vect){
+        for(auto car:cars) std::cout<<car; ;
+        std::cout<< "  "<<std::endl;
+    }
+    */
 
 
     return 0;

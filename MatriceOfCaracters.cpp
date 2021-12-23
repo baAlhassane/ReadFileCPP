@@ -3,16 +3,29 @@
 //
 
 #include "MatriceOfCaracters.h"
-
-
 #include <vector>
 #include <string>
 #include <iostream>
 
-MatriceOfCaracters::MatriceOfCaracters(const std::vector<std::string> &lines) {
+MatriceOfCaracters::MatriceOfCaracters(const ReadFile &readfile ) {
 
-    for(auto &line:lines){
+    for(auto &line:readfile.getLines()){
+        std::vector<char> vector_char;
+        for(auto car:line){
+            vector_char.push_back(car);
+
+        }
+
+        matriceofcaracters.push_back(vector_char);
+
+
 
     }
 
+}
+
+MatriceOfCaracters::~MatriceOfCaracters() {}
+
+std::vector<std::vector<char>> MatriceOfCaracters::getMatriceofcaracters() const {
+    return matriceofcaracters;
 }

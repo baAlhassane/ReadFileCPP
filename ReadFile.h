@@ -15,14 +15,18 @@
 class ReadFile {
 
 private:
-    std::vector<char> line; // one line of our file
+    std::string line; // one line of our file
     std::vector<std::string> lines; // All lines of our file
     std::map<char,int> map_textures;
+    std::size_t nbLines;
+    std::size_t nbColumns;
 
 public:
-    ReadFile(const char* filename="labyrinthe.txt");
+    ReadFile(const std::string & filename="labyrinthe.txt");
     ~ReadFile();
-    std::vector<std::string> getLines();//get all the lines like vector of string
+    std::vector<std::string> getLines()const;//get all the lines like vector of string
+    std::size_t getNbColumns() const;
+    std::size_t getNbLines() const;
 
 
 };
