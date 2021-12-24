@@ -21,11 +21,17 @@ MatriceOfCaracters::MatriceOfCaracters(const ReadFile &readfile ) {
 
 
     }
-
+nbColumns=readfile.getNbColumns();
 }
 
 MatriceOfCaracters::~MatriceOfCaracters() {}
 
 std::vector<std::vector<char>> MatriceOfCaracters::getMatriceofcaracters() const {
     return matriceofcaracters;
+}
+
+
+std::size_t  MatriceOfCaracters::getNbColumns() const {
+
+    return  nbColumns;
 }

@@ -10,4 +10,6 @@ add_executable(ReadFileCPP
         ReadFile.cpp
         MatriceOfCaracters.h
         MatriceOfCaracters.cpp
+        Data.h
+        Data.cpp
         main.cpp)

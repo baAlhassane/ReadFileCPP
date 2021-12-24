@@ -15,12 +15,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e80a1ad-9aac-4c4f-9ea8-cce16dbcd521" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Data.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MatriceOfCaracters.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MatriceOfCaracters.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MatriceOfCaracters.h" beforeDir="false" afterPath="$PROJECT_DIR$/MatriceOfCaracters.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ReadFile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadFile.h" beforeDir="false" afterPath="$PROJECT_DIR$/ReadFile.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +113,10 @@
       <workItem from="1640241603400" duration="1322000" />
       <workItem from="1640253841778" duration="1731000" />
       <workItem from="1640255662557" duration="8794000" />
-      <workItem from="1640265749379" duration="4135000" />
+      <workItem from="1640265749379" duration="4637000" />
+      <workItem from="1640290679479" duration="2000" />
+      <workItem from="1640290698576" duration="659000" />
+      <workItem from="1640364184139" duration="3986000" />
     </task>
     <servers />
   </component>

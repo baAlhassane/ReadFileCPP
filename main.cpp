@@ -8,18 +8,23 @@
 #include <vector>
 #include <string>
 #include "MatriceOfCaracters.h"
+#include "Data.h"
 int main(){
     std::cout<<"hello"<<std::endl;
 ReadFile file("labyrinthe.txt");
 
 std::vector<std::string>lines= file.getLines();
 
-std::cout<<file.getNbLines()<< " X "<< file.getNbColumns()<<std::endl;
+std::cout<<" size of  mtriceOfcaracter  :"<<std::endl;
+
+std::cout<<file.getNbLines()<< "  X  "<< file.getNbColumns()<<std::endl;
 
 
 MatriceOfCaracters matrice(file);
 
 std::vector<std::vector<char>> vect=matrice.getMatriceofcaracters();
+
+
 
 
 /*
@@ -28,6 +33,13 @@ std::vector<std::vector<char>> vect=matrice.getMatriceofcaracters();
         std::cout<< "  "<<std::endl;
     }
     */
+
+
+Data d(matrice);
+
+    std::cout<<" size f of data   :"<<std::endl;
+std::cout<<d.getHeight()<< " size of data X "<< d.getWidth()<<std::endl;
+
 
 
     return 0;
